@@ -22,7 +22,7 @@
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <span class="logo-icon">☪</span>
+                <img src="images/logo.jpeg" alt="Azhari Academy Logo" class="logo-img">
                 <span class="logo-text">Azhari Academy</span>
             </a>
             <ul class="nav-links">
@@ -35,44 +35,41 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg">
-            <div class="geometric-pattern"></div>
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-accent accent-1">❋</div>
-        <div class="hero-accent accent-2">❋</div>
+    <section class="hero" id="hero">
+        <div class="hero-bg-image" style="background-image: url('images/quran-open.png');"></div>
+        <div class="hero-overlay-dark"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">
+                <div class="hero-badge breathing float-gentle">
                     <span class="badge-icon">☪</span>
                     <span>Est. 2020 • UK & US</span>
                 </div>
-                <h1>Learn Quran & Arabic Online <span class="highlight">with Qualified Egyptian Teachers</span></h1>
-                <p class="hero-subtitle">Professional online Islamic education for all ages — from complete beginners to advanced students. Experience authentic learning from the heart of Al-Azhar tradition.</p>
+                <p class="hero-hook">"What if your child could recite the Quran with the same beauty as those raised in Egypt?"</p>
+                <h1 class="text-reveal">It starts with <span class="highlight">one free lesson.</span></h1>
+                <p class="hero-subtitle">Learn Quran, Arabic & Tajweed online with qualified Al-Azhar teachers. Professional, one-to-one Islamic education for all ages — from complete beginners to advanced students.</p>
                 <div class="hero-cta">
-                    <a href="book.html" class="btn btn-primary">
-                        <span>Book a Free Trial</span>
+                    <a href="book.html" class="btn btn-primary liquid-btn" id="hero-cta-primary">
+                        <span>Book Your Free Trial</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
-                    <a href="courses.html" class="btn btn-secondary">
+                    <a href="courses.html" class="btn btn-secondary liquid-btn" id="hero-cta-secondary">
                         <span>Explore Courses</span>
                     </a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
+                <div class="hero-stats parallax-container">
+                    <div class="stat depth-layer-1">
                         <span class="stat-number">500+</span>
                         <span class="stat-label">Students Worldwide</span>
                     </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
+                    <div class="stat-divider depth-layer-2"></div>
+                    <div class="stat depth-layer-3">
                         <span class="stat-number">15+</span>
                         <span class="stat-label">Expert Teachers</span>
                     </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number">6</span>
-                        <span class="stat-label">Course Programs</span>
+                    <div class="stat-divider depth-layer-2"></div>
+                    <div class="stat depth-layer-1">
+                        <span class="stat-number">All Ages</span>
+                        <span class="stat-label">Kids to Adults</span>
                     </div>
                 </div>
             </div>
@@ -80,121 +77,140 @@
     </section>
 
     <!-- Why Azhari Academy -->
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <div class="section-header">
                 <span class="section-subtitle">Why Choose Us</span>
                 <h2 class="section-title">The Azhari Academy Difference</h2>
                 <p class="section-desc">Authentic Islamic education delivered with professionalism and care</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon-wrapper">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5a12.083 12.083 0 01-6.16-10.922L12 14z"/></svg>
-                        </div>
-                        <div class="feature-glow"></div>
-                    </div>
-                    <h3>Al-Azhar Qualified</h3>
-                    <p>Learn from teachers with authentic Islamic education from Egypt's prestigious Al-Azhar tradition, ensuring correct recitation and understanding.</p>
+            <div class="features-with-image">
+                <div class="features-image-col">
+                    <img src="images/student-learning.png" alt="Student learning Quran with teacher" class="features-photo" loading="lazy">
+                    <div class="features-image-overlay"></div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon-wrapper">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg>
+                <div class="features-grid stagger-children">
+                    <div class="feature-card magnetic-btn" id="feature-azhar">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5a12.083 12.083 0 01-6.16-10.922L12 14z"/></svg>
+                            </div>
+                            <div class="feature-glow"></div>
                         </div>
-                        <div class="feature-glow"></div>
+                        <h3>Al-Azhar Qualified</h3>
+                        <p>Learn from teachers with authentic Islamic education from Egypt's prestigious Al-Azhar tradition, ensuring correct recitation and understanding.</p>
                     </div>
-                    <h3>All Ages Welcome</h3>
-                    <p>From 5-year-olds taking their first steps in Quran reading to adults deepening their knowledge — we personalise for every age.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon-wrapper">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                    <div class="feature-card magnetic-btn" id="feature-ages">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg>
+                            </div>
+                            <div class="feature-glow"></div>
                         </div>
-                        <div class="feature-glow"></div>
+                        <h3>All Ages Welcome</h3>
+                        <p>From 5-year-olds taking their first steps in Quran reading to adults deepening their knowledge — we personalise for every age.</p>
                     </div>
-                    <h3>Flexible Scheduling</h3>
-                    <p>Life is busy. Choose from morning, afternoon, or evening slots. Reschedule easily when plans change — we understand.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon-wrapper">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <div class="feature-card magnetic-btn" id="feature-schedule">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            </div>
+                            <div class="feature-glow"></div>
                         </div>
-                        <div class="feature-glow"></div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Life is busy. Choose from morning, afternoon, or evening slots. Reschedule easily when plans change — we understand.</p>
                     </div>
-                    <h3>One-to-One Focus</h3>
-                    <p>Private sessions mean undivided attention. Your child — or you — progresses at the perfect pace with a dedicated teacher.</p>
+                    <div class="feature-card magnetic-btn" id="feature-one-to-one">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div class="feature-glow"></div>
+                        </div>
+                        <h3>One-to-One Focus</h3>
+                        <p>Private sessions mean undivided attention. Your child — or you — progresses at the perfect pace with a dedicated teacher.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Courses Overview -->
-    <section class="courses-preview">
+    <!-- Courses Overview — Open-ended, Personalised -->
+    <section class="courses-preview" id="courses-preview">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Our Programs</span>
-                <h2 class="section-title">Six Paths to Knowledge</h2>
-                <p class="section-desc">From your first letters to advanced certification — a journey tailored to your goals</p>
+                <span class="section-subtitle">What We Teach</span>
+                <h2 class="section-title">A Curriculum Built Around You</h2>
+                <p class="section-desc">Whether you're starting from scratch or looking to perfect your Tajweed, memorise Quran, learn Arabic, or study Islamic studies — we'll build a learning plan that fits you.</p>
             </div>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <div class="course-badge">Beginner</div>
-                    <div class="course-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
-                    </div>
-                    <h3>Quran Reading for Beginners</h3>
-                    <p>Step-by-step journey from the Arabic alphabet to fluent Quranic reading.</p>
-                    <a href="courses.html" class="course-link">Learn more →</a>
+            <div class="courses-flexible">
+                <div class="courses-intro-text">
+                    <p>At Azhari Academy, we believe every student's journey is unique. That's why our curriculum is <strong>personalised to each student's needs and goals</strong>. Tell us your goals in your free trial and we'll take care of the rest.</p>
                 </div>
-                <div class="course-card featured">
-                    <div class="course-badge">Popular</div>
-                    <div class="course-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <div class="courses-tags-grid">
+                    <div class="course-tag" id="tag-reading">
+                        <div class="course-tag-icon">📖</div>
+                        <div class="course-tag-info">
+                            <h3>Quran Reading</h3>
+                            <p>From the Arabic alphabet to fluent recitation</p>
+                        </div>
                     </div>
-                    <h3>Quran Memorisation (Hifz)</h3>
-                    <p>Structured memorisation with proven retention techniques and caring revision support.</p>
-                    <a href="courses.html" class="course-link">Learn more →</a>
-                </div>
-                <div class="course-card">
-                    <div class="course-badge">Essential</div>
-                    <div class="course-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <div class="course-tag featured" id="tag-hifz">
+                        <div class="course-tag-icon">⭐</div>
+                        <div class="course-tag-info">
+                            <h3>Hifz (Memorisation)</h3>
+                            <p>Structured memorisation with proven retention techniques</p>
+                        </div>
                     </div>
-                    <h3>Tajweed Mastery</h3>
-                    <p>Perfect your recitation with the rules that preserve the Quran's eloquence.</p>
-                    <a href="courses.html" class="course-link">Learn more →</a>
-                </div>
-                <div class="course-card">
-                    <div class="course-badge">Language</div>
-                    <div class="course-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                    <div class="course-tag" id="tag-tajweed">
+                        <div class="course-tag-icon">🎙️</div>
+                        <div class="course-tag-info">
+                            <h3>Tajweed</h3>
+                            <p>Perfect your recitation with the rules of correct pronunciation</p>
+                        </div>
                     </div>
-                    <h3>Arabic for Beginners</h3>
-                    <p>Unlock the language of the Quran. Read, write, and speak from day one.</p>
-                    <a href="courses.html" class="course-link">Learn more →</a>
+                    <div class="course-tag" id="tag-arabic">
+                        <div class="course-tag-icon">🗣️</div>
+                        <div class="course-tag-info">
+                            <h3>Arabic Language</h3>
+                            <p>Read, write, and speak Arabic at any level</p>
+                        </div>
+                    </div>
+                    <div class="course-tag" id="tag-islamic">
+                        <div class="course-tag-icon">🕌</div>
+                        <div class="course-tag-info">
+                            <h3>Islamic Studies</h3>
+                            <p>Fiqh, Aqeedah, Seerah, and more</p>
+                        </div>
+                    </div>
+                    <div class="course-tag" id="tag-ijazah">
+                        <div class="course-tag-icon">📜</div>
+                        <div class="course-tag-info">
+                            <h3>Ijazah & Qira'at</h3>
+                            <p>Advanced certification and specialised readings</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <a href="courses.html" class="btn btn-outline">View All Six Courses</a>
+                <div class="courses-more-cta">
+                    <p class="courses-more-text">...and much more, tailored to your level and aspirations.</p>
+                    <a href="courses.html" class="btn btn-outline" id="courses-explore-btn">See Full Course Details</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials islamic-pattern-reveal" id="testimonials">
+        <div class="testimonials-bg-image" style="background-image: url('images/islamic-architecture.png');"></div>
+        <div class="testimonials-bg-overlay"></div>
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal-on-scroll">
                 <span class="section-subtitle">Testimonials</span>
-                <h2 class="section-title">Stories from Our Community</h2>
+                <h2 class="section-title shimmer-text">Stories from Our Community</h2>
                 <p class="section-desc">Hear from parents and students across the UK and US</p>
             </div>
-            <div class="testimonials-grid">
-                <!-- [PLACEHOLDER — replace with real testimonial] -->
-                <div class="testimonial-card">
+            <div class="testimonials-grid stagger-children">
+                <div class="testimonial-card magnetic-btn" id="testimonial-1">
                     <div class="testimonial-quote">❝</div>
                     <p class="testimonial-text">My son has improved so much in just a few months. The teacher is patient, encouraging, and truly cares about his progress. We couldn't be happier.</p>
                     <div class="testimonial-author">
@@ -205,8 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- [PLACEHOLDER — replace with real testimonial] -->
-                <div class="testimonial-card featured">
+                <div class="testimonial-card featured magnetic-btn" id="testimonial-2">
                     <div class="testimonial-quote">❝</div>
                     <p class="testimonial-text">I started as a complete beginner at age 45, thinking it was too late. Now I can read the Quran with proper Tajweed. The one-to-one attention made all the difference.</p>
                     <div class="testimonial-author">
@@ -217,8 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- [PLACEHOLDER — replace with real testimonial] -->
-                <div class="testimonial-card">
+                <div class="testimonial-card magnetic-btn" id="testimonial-3">
                     <div class="testimonial-quote">❝</div>
                     <p class="testimonial-text">The flexibility is incredible. With three children and work, I never thought we could manage Quran lessons. Azhari Academy made it possible.</p>
                     <div class="testimonial-author">
@@ -233,12 +247,27 @@
         </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
+    <!-- Strong Closing CTA -->
+    <section class="cta-final" id="cta-final">
+        <div class="cta-final-bg" style="background-image: url('images/islamic-architecture.png');"></div>
+        <div class="cta-final-overlay"></div>
         <div class="container">
-            <h2>Start Your Learning Journey Today</h2>
-            <p>Book a free trial session and experience the Azhari Academy difference.</p>
-            <a href="book.html" class="btn btn-primary btn-large">Book Your Free Trial Now</a>
+            <div class="cta-final-content">
+                <span class="cta-final-badge">✦ Take the First Step ✦</span>
+                <h2>Your journey with the Quran starts with a single step. Take it today — <em>for free.</em></h2>
+                <p>Book a free trial session and experience the Azhari Academy difference. No commitment, no pressure — just the beginning of something beautiful.</p>
+                <a href="book.html" class="btn btn-primary btn-large liquid-btn" id="cta-final-btn">
+                    <span>Book Your Free Trial Now</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <div class="cta-final-contact">
+                    <p>Or reach us directly:</p>
+                    <div class="cta-contact-links">
+                        <a href="https://wa.me/447356066651" target="_blank">📱 WhatsApp (UK)</a>
+                        <a href="mailto:info.azhari.academy@gmail.com">📧 Email Us</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -248,7 +277,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <span class="logo-icon">☪</span>
+                        <img src="images/logo.jpeg" alt="Azhari Academy Logo" class="logo-img">
                         <span class="logo-text">Azhari Academy</span>
                     </a>
                     <p class="tagline">Authentic Islamic education from the heart of Al-Azhar tradition. Serving students across the UK and US since 2020.</p>
