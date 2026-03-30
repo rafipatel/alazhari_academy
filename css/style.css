@@ -247,7 +247,9 @@ a {
 }
 
 .hero-badge .badge-icon {
-    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
 }
 
 /* Emotional hook text */
@@ -665,8 +667,34 @@ section {
 }
 
 .course-tag-icon {
-    font-size: 2rem;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    color: var(--color-primary);
+}
+
+.course-tag-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.course-tag.featured .course-tag-icon {
+    color: var(--color-secondary);
+}
+
+.cta-contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer-contact svg {
+    flex-shrink: 0;
+    opacity: 0.75;
+    color: var(--color-secondary-light);
 }
 
 .course-tag-info h3 {
@@ -1107,10 +1135,44 @@ section {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    align-items: start;
 }
 
 .course-detailed-card:hover {
     box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+/* Course icon tile — replaces the old emoji */
+.course-number {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Per-course gradients applied to the icon tile */
+.course-img-quran   { background: linear-gradient(135deg, #0d4a38 0%, #1a7a55 100%); }
+.course-img-hifz    { background: linear-gradient(135deg, #062a1c 0%, #0d4a38 100%); }
+.course-img-tajweed { background: linear-gradient(135deg, #0d4a38 0%, #1b6148 100%); }
+.course-img-arabic  { background: linear-gradient(135deg, #163a2c 0%, #0d4a38 100%); }
+.course-img-islamic { background: linear-gradient(135deg, #062419 0%, #0d4a38 100%); }
+.course-img-ijazah  { background: linear-gradient(135deg, #091f14 0%, #0d4a38 100%); }
+
+/* SVG icon inside the tile */
+.course-img-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--color-secondary);
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.2));
+    transition: transform 0.4s ease;
+}
+
+.course-detailed-card:hover .course-img-icon {
+    transform: scale(1.18) rotate(4deg);
 }
 
 .course-number {
@@ -1623,9 +1685,14 @@ section {
     }
     
     .course-detailed-card {
-        grid-template-columns: 1fr;
+        grid-template-columns: 60px 1fr;
         gap: 20px;
         padding: 28px;
+    }
+
+    .course-number {
+        width: 60px;
+        height: 60px;
     }
     
     .course-number {
@@ -1990,5 +2057,96 @@ section {
 
     .why-choose-image-col img {
         height: 260px;
+    }
+}
+
+/* ===== Page Header CTA Buttons ===== */
+.page-header-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+/* ===== Gold WhatsApp Button ===== */
+.btn-whatsapp-gold {
+    background: var(--color-secondary);
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 1rem;
+    border: none;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn-whatsapp-gold:hover {
+    background: var(--color-secondary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(212,168,75,0.45);
+}
+
+.btn-whatsapp-gold.btn-large {
+    padding: 16px 36px;
+    font-size: 1.05rem;
+}
+
+/* ===== WhatsApp CTA Banner ===== */
+.whatsapp-cta-banner {
+    background: var(--color-primary-dark);
+    padding: 40px 0;
+}
+
+.whatsapp-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.whatsapp-cta-banner p {
+    color: rgba(255,255,255,0.88);
+    font-size: 1.05rem;
+    margin: 0;
+    max-width: 520px;
+}
+
+/* ===== CTA Final Buttons Row ===== */
+.cta-final-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+/* ===== Mobile responsive for course cards ===== */
+@media (max-width: 768px) {
+    .course-card-body {
+        grid-template-columns: 60px 1fr;
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .course-img-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .whatsapp-cta-inner {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .page-header-cta {
+        flex-direction: column;
+        align-items: center;
     }
 }
