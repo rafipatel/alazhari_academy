@@ -2221,8 +2221,7 @@ section {
 
 .about-story-image img {
     width: 100%;
-    height: 420px;
-    object-fit: cover;
+    height: auto;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
 }
@@ -2434,7 +2433,6 @@ section {
         gap: 32px;
     }
 
-    .about-story-image img,
     .about-journey-image img {
         height: 260px;
     }
