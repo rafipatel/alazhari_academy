@@ -40,7 +40,7 @@
         <div class="container">
             <span class="page-subtitle">Get Started</span>
             <h1>Book Your Free Trial</h1>
-            <p>Take the first step on your journey. We'll respond within 24 hours.</p>
+            <p>Take the first step on your journey. Takes about a minute. We'll reply within 24 hours.</p>
         </div>
     </section>
 
@@ -49,90 +49,115 @@
         <div class="container">
             <div class="booking-grid">
                 <div class="booking-form-container">
-                    <form class="booking-form" action="https://formsubmit.co/info.azhari.academy@gmail.com" method="POST">
+                    <form class="booking-form" id="trial-form" action="https://formsubmit.co/info.azhari.academy@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="New Trial Booking — Azhari Academy">
                         <input type="hidden" name="_template" value="table">
-                        
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_cc" value="abdosaid243@gmail.com">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
                         <div class="form-group">
-                            <label for="student-name">Student Name *</label>
-                            <input type="text" id="student-name" name="Student Name" required placeholder="Enter student's full name">
+                            <label for="for-whom">Who is the trial for? *</label>
+                            <select id="for-whom" name="Trial For" required>
+                                <option value="">Select</option>
+                                <option value="Myself">Myself</option>
+                                <option value="My child">My child</option>
+                                <option value="Another family member">Another family member</option>
+                            </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="parent-name">Parent / Guardian Name</label>
-                            <input type="text" id="parent-name" name="Parent Name" placeholder="If booking for a child">
+                            <label for="student-name">Student's name *</label>
+                            <input type="text" id="student-name" name="Student Name" required placeholder="First name is fine">
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">WhatsApp / Phone Number *</label>
-                            <input type="tel" id="phone" name="Phone" required placeholder="+44...">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="Email" required placeholder="your@email.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="country">Country *</label>
-                            <input type="text" id="country" name="Country" required placeholder="e.g. United Kingdom, USA, Canada">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="age">Age of Student *</label>
+                            <label for="age">Student's age *</label>
                             <input type="number" id="age" name="Age" required min="3" max="99" placeholder="e.g. 8">
                         </div>
 
                         <div class="form-group">
-                            <label for="level">Current Level</label>
-                            <select id="level" name="Level">
-                                <option value="">Select your level</option>
-                                <option value="Beginner">Beginner — just starting out</option>
-                                <option value="Intermediate">Intermediate — some experience</option>
+                            <label for="goal">What would you like to learn? *</label>
+                            <select id="goal" name="Wants To Learn" required>
+                                <option value="">Select</option>
+                                <option value="Quran reading with Tajweed">Quran reading with Tajweed</option>
+                                <option value="Quran memorisation">Quran memorisation</option>
+                                <option value="Arabic language">Arabic language</option>
+                                <option value="Islamic studies">Islamic studies</option>
+                                <option value="Not sure yet">Not sure yet — advise me</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="experience">Previous Quran or Arabic study?</label>
-                            <select id="experience" name="Previous Study">
-                                <option value="">Select an option</option>
-                                <option value="None">No previous study</option>
-                                <option value="Beginner">Some basics</option>
-                                <option value="Intermediate">Can read with some help</option>
-                                <option value="Advanced">Comfortable reading</option>
+                            <label for="level">Current level *</label>
+                            <select id="level" name="Level" required>
+                                <option value="">Select</option>
+                                <option value="Complete beginner">Complete beginner</option>
+                                <option value="Can read slowly">Can read slowly, needs help</option>
+                                <option value="Reads fluently">Reads fluently</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label>Preferred Days (select all that apply)</label>
+                            <label for="teacher-pref">Teacher preference</label>
+                            <select id="teacher-pref" name="Teacher Preference">
+                                <option value="No preference">No preference</option>
+                                <option value="Female teacher">Female teacher</option>
+                                <option value="Male teacher">Male teacher</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country (so we match your time zone) *</label>
+                            <input type="text" id="country" name="Country" required placeholder="e.g. United Kingdom">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Best days (tick any)</label>
                             <div class="checkbox-group">
-                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Monday"> Monday</label>
-                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Tuesday"> Tuesday</label>
-                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Wednesday"> Wednesday</label>
-                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Thursday"> Thursday</label>
-                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Friday"> Friday</label>
-                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Saturday"> Saturday</label>
-                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Sunday"> Sunday</label>
+                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Monday"> Mon</label>
+                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Tuesday"> Tue</label>
+                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Wednesday"> Wed</label>
+                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Thursday"> Thu</label>
+                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Friday"> Fri</label>
+                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Saturday"> Sat</label>
+                                <label class="checkbox-label"><input type="checkbox" name="Preferred Days" value="Sunday"> Sun</label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="time">Preferred Time (approximate)</label>
+                            <label for="time">Best time (your local time)</label>
                             <select id="time" name="Preferred Time">
-                                <option value="">Select preferred time</option>
-                                <option value="Morning (9am-12pm)">Morning (9am — 12pm)</option>
+                                <option value="Any time">Any time</option>
+                                <option value="Morning (before 12pm)">Morning (before 12pm)</option>
                                 <option value="Afternoon (12pm-5pm)">Afternoon (12pm — 5pm)</option>
-                                <option value="Evening (5pm-9pm)">Evening (5pm — 9pm)</option>
+                                <option value="Evening (after 5pm)">Evening (after 5pm)</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="notes">Additional Notes</label>
-                            <textarea id="notes" name="Notes" rows="4" placeholder="Any specific requirements, goals, or questions..."></textarea>
+                            <label for="phone">WhatsApp number *</label>
+                            <input type="tel" id="phone" name="WhatsApp" required placeholder="+44 7... (include country code)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="Email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Anything we should know? (optional)</label>
+                            <textarea id="notes" name="Notes" rows="3" placeholder="Goals, special needs, questions..."></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-submit">Request Free Trial</button>
+                        <p id="form-msg" role="status" style="margin-top:14px;display:none"></p>
                     </form>
+                    <div id="form-success" style="display:none;text-align:center;padding:32px 12px">
+                        <h3>JazakAllahu khayran — request received ✓</h3>
+                        <p>We will contact you on WhatsApp within 24 hours to arrange your free trial with the most suitable teacher.</p>
+                        <a href="https://wa.me/447356066651" class="btn btn-whatsapp" target="_blank" rel="noopener">Message us on WhatsApp now</a>
+                    </div>
                 </div>
 
                 <div class="contact-sidebar">
@@ -242,5 +267,26 @@
     </a>
 
     <script src="js/main.js"></script>
+    <script>
+    (function(){
+      var f=document.getElementById('trial-form'); if(!f||!window.fetch) return;
+      f.addEventListener('submit',function(e){
+        e.preventDefault();
+        var btn=f.querySelector('.btn-submit'), msg=document.getElementById('form-msg');
+        btn.disabled=true; var old=btn.textContent; btn.textContent='Sending…'; msg.style.display='none';
+        var fd=new FormData(f); var days=[]; f.querySelectorAll('input[name="Preferred Days"]:checked').forEach(function(c){days.push(c.value)});
+        fd.delete('Preferred Days'); fd.append('Preferred Days', days.join(', ')||'Not specified');
+        fetch('https://formsubmit.co/ajax/info.azhari.academy@gmail.com',{method:'POST',headers:{'Accept':'application/json'},body:fd})
+          .then(function(r){return r.json()}).then(function(d){
+            if(d && (d.success==='true'||d.success===true)){ f.style.display='none'; document.getElementById('form-success').style.display='block'; window.scrollTo({top:0,behavior:'smooth'}); }
+            else throw new Error('x');
+          }).catch(function(){
+            btn.disabled=false; btn.textContent=old; msg.style.display='block';
+            msg.innerHTML='Sorry, something went wrong. Please message us directly on <a href="https://wa.me/447356066651" target="_blank" rel="noopener">WhatsApp</a>.';
+          });
+      });
+    })();
+    </script>
+
 </body>
 </html>
